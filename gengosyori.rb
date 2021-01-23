@@ -13,5 +13,6 @@ puts %w[パトカー タクシー].map(&:chars).transpose.join
 
 str = 'Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.'
 p str.delete(".").split(/\s/).map(&:size)
-
+p str.scan(/\w+/).map(&:size)
+p str.split(/[ ,.]+/).map(&:size)
 p str.split(/[^[:alpha:]]/).reject(&:empty?).map(&:size)
