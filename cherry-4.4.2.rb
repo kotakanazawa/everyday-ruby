@@ -11,7 +11,7 @@ p numbers.reject(&:even?) #=> [1, 3, 5]
 p numbers.find(&:odd?) #=> 1
 
 # findのエイリアスメソッド
-p numbers.find(&:odd?) #=> 1
+p numbers.detect(&:odd?) #=> 1
 
 # inject
 p numbers.inject(0) { |result, n| result + n } #=> 15
