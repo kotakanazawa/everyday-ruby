@@ -18,3 +18,8 @@ p ary #=> ["protein", "fat", "carb"]
 copy_ary.delete_if { |elm| elm == 'protein' }
 p copy_ary #=> ["fat", "carb"]
 p ary #=> ["protein", "fat", "carb"]
+
+# 要素のひとつをgsubで変更すると元の配列も変更されている？
+copy_ary.first.gsub!('protein', 'pork')
+p copy_ary #=> ["pork", "fat", "carb"]
+p ary #=> ["pork", "fat", "carb"]

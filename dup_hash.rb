@@ -21,3 +21,5 @@ p original_hash #=> {:b=>2, :c=>3}
 
 # コピーをdupしたものは変更されない
 p hash_from_copy #=> {:a=>1, :b=>2, :c=>3}
+
+
