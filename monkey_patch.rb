@@ -15,3 +15,4 @@ class User
 end
 
 p User.new('hoge').hello #=> "hoge, bounjour"
+
