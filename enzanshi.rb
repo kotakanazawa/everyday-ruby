@@ -10,7 +10,7 @@ p obj1.eql?(obj2) #=> true
 # 内容が同じかどうかをチェック
 p obj1 == obj2 #=> true
 
-# Rubyではこれはtrue
+# Rubyではこれはtrueになる
 p 1 == 1.0 #=> true
 
 h = { 1 => 'Integer', 1.0 => 'Float' }
