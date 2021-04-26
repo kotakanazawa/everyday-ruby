@@ -20,3 +20,6 @@ p h[1.0] #=> "Float"
 # 自身と other のクラスが等しくかつ == メソッドで比較して等しい場合に true を返す
 p 1.eql?(1.0) #=> false
 p 1.0.eql?(1.0) #=> true
+
+
+puts 'hoge'
