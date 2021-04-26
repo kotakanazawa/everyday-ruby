@@ -1,9 +1,11 @@
+require 'pry'
+
 print 'Text?: '
 text = gets.chomp
 begin
   print 'Pattern?: '
   pattern = gets.chomp
-  pp regexp = Regexp.new(pattern)
+  regexp = Regexp.new(pattern)
 rescue RegexpError => e
   puts "Invalid pattern: #{e.message}"
   retry
