@@ -1,15 +1,20 @@
-def currency_of(country)
-  case country
-  when :japan
-    puts 'yen'
-  when :us
-    puts 'us'
-  when :india
-    puts 'india'
-  else
-    raise ArgumentError, "無効な国名です #{country}"
-  end
+require 'pry'
+
+def hoge
+  raise ArgumentError.new('例外だぜーーーーい')
+  rescue NoMethodError => e
+    puts 'NoMethodError節で補足されました'
+    puts "例外クラス名: #{e.class}"
+    puts "例外メッセージ: #{e.message}"
+  rescue NameError => e
+    puts "NameError節で補足されました"
+    puts "例外クラス名: #{e.class}"
+    puts "例外メッセージ: #{e.message}"
+  rescue StandardError => e
+    puts "StandardError節で補足されました"
+    puts "例外クラス名: #{e.class}"
+    puts "例外メッセージ: #{e.message}"
+    binding.pry
 end
 
-currency_of(:japan)
-currency_of(:hoge)
+hoge
